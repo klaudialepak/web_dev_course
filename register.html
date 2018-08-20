@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="register.html" method="post">
+
+      <h1>Register</h1>
+
+      <span>First Name:</span> <input type="text" name="firstname" value="" required>
+      <span>Last Name:</span> <input type="text" name="lastname" value="" required>
+
+      <br>
+
+      <span>Male</span> <input type="radio" name="gender" value="male">
+      <span>Female</span> <input type="radio" name="gender" value="female">
+      <span>Other</span> <input type="radio" name="gender" value="other">
+
+      <br>
+
+      <span>Email:</span> <input type="email" name="email" value="" required>
+      <span>Password:</span> <input type="password" name="password" value="" minlength="5" maxlength="10" required>
+
+      <br>
+      <span>Birthday:</span>
+
+      <select class="" name="Month">
+        <option value="Month">March</option>
+        <option value="Month">October</option>
+      </select>
+      <select class="" name="Day">
+        <option value="Day">3</option>
+        <option value="Day">9</option>
+      </select>
+      <select class="" name="Year">
+        <option value="Year">1996</option>
+        <option value="Year">1992</option>
+      </select>
+
+      <br>
+
+      <span>I agree to the terms and conditions</span> <input type="checkbox" name="" value="">
+
+      <br>
+
+
+      <button type="button" name="button">Submit</button>
+
+     </form>
+  </body>
+</html>
