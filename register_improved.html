@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <form method="post">
+
+            <h1>Register</h1>
+
+            <!-- Dając tutaj SPAN i nie zamieszczając LABEL, nie wspierasz tych robotów czytających  
+                tutaj im chodziło o + zamiast br zastosujmy div jako separatory-->
+            <div>
+                <label for="name">First name:</label>
+                <input id="name" type="text" placeholder="John" name="name" required>
+                <label for="surname">Last name:</label>
+                <input id="password" type="text" placeholder="Smith" name="surname" required>
+            </div>
+            <!-- <span>First Name:</span> <input type="text" name="firstname" value="" required>
+            <span>Last Name:</span> <input type="text" name="lastname" value="" required>
+
+            <br> -->
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other">
+            </div>
+            <!--    
+            <span>Male</span> <input type="radio" name="gender" value="male">
+            <span>Female</span> <input type="radio" name="gender" value="female">
+            <span>Other</span> <input type="radio" name="gender" value="other"> -->
+
+            <div>  
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="your email" required>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" minlength="5" maxlength="10" required>
+            </div>
+
+            <!-- <span>Email:</span> <input type="email" name="email" value="" required>
+            <span>Password:</span> <input type="password" name="password" value="" minlength="5" maxlength="10" required> -->
+
+            <!-- tutaj dałem jako pierwszą opcję jeszcze nazwę Month/Year/Date zeby była widoczna jak na obrazku referencyjnym -->
+            <!-- ooooh nasze urodziny <3-->
+            <div>
+                <label for="birthday">Birthday:</label>
+                <select name="month" id="birthday">
+                    <option>Month</option>
+                    <option>March</option>
+                    <option>October</option>
+                </select>
+
+                <select name="Day">
+                    <option>Day</option>
+                    <option>3</option>
+                    <option>9</option>
+                </select>
+
+                <select name="Year">
+                    <option>Year</option>
+                    <option>1996</option>
+                    <option>1992</option>
+                </select>
+            </div>
+
+        <!-- <br>
+        <span>Birthday:</span>
+
+        <select class="" name="Month">
+        <option value="Month">March</option>
+        <option value="Month">October</option>
+        </select>
+        <select class="" name="Day">
+        <option value="Day">3</option>
+        <option value="Day">9</option>
+        </select>
+        <select class="" name="Year">
+        <option value="Year">1996</option>
+        <option value="Year">1992</option>
+        </select>
+
+        <br> 
+        <span>I agree to the terms and conditions</span> <input type="checkbox" name="" value="">
+        <button type="button" name="button">Submit</button>
+        -->
+            <div>
+                <label for="checkbox">I agree to the terms and conditions:</label>
+                <input id="checkbox" type="checkbox" name="check" required>
+
+                <br>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body> 
+</html>
+<!-- GOOD JOB TAK W OGOLE! no i inwencja własna <3 -->
